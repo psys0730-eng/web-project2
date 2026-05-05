@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Memories</title>
+    <meta name="description" content="A vintage-inspired website showcasing classic aesthetics.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">L'Époque</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Journal</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="fade-in-up">Timeless Elegance</h1>
+                <p class="fade-in-up delay-1">Preserving the beauty of the past in a modern world.</p>
+                <a href="#gallery" class="btn fade-in-up delay-2">Explore the Archive</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="images/hero.png" alt="Vintage Cafe Interior" class="hero-image">
+                <div class="vintage-frame"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding">
+            <div class="container about-container">
+                <div class="about-text scroll-reveal">
+                    <h2>Our Story</h2>
+                    <div class="divider"></div>
+                    <p>In an age of fleeting moments and digital noise, we find solace in the enduring charm of yesteryear. Our collection celebrates the analog era—where every photograph, every typed word, and every vinyl record carried a tangible piece of soul.</p>
+                    <p>Join us as we step back in time, embracing the warm sepia tones and the gentle crackle of nostalgia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery section-padding">
+            <div class="container">
+                <h2 class="text-center scroll-reveal">Curated Journal</h2>
+                <div class="divider center-divider"></div>
+                
+                <div class="gallery-grid">
+                    <article class="gallery-card scroll-reveal">
+                        <div class="card-image">
+                            <img src="images/gallery1.png" alt="Vintage Film Camera">
+                            <div class="card-overlay">
+                                <span>Through the Lens</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Analog Dreams</h3>
+                            <p class="date">October 24, 1982</p>
+                            <p>Capturing light and shadows on physical film. The mechanical click of a classic camera.</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card scroll-reveal delay-1">
+                        <div class="card-image">
+                            <img src="images/gallery2.png" alt="Retro Typewriter">
+                            <div class="card-overlay">
+                                <span>Written Words</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Ink and Paper</h3>
+                            <p class="date">November 12, 1975</p>
+                            <p>The rhythmic clatter of keys striking paper, immortalizing thoughts one letter at a time.</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card scroll-reveal delay-2">
+                        <div class="card-image">
+                            <img src="images/gallery3.png" alt="Vintage Record Player">
+                            <div class="card-overlay">
+                                <span>Analog Sound</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Vinyl Whispers</h3>
+                            <p class="date">May 05, 1968</p>
+                            <p>The warm, rich tones of a vinyl record filling the room with melodies of a forgotten era.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding">
+            <div class="container contact-container scroll-reveal">
+                <h2>Send a Telegram</h2>
+                <div class="divider"></div>
+                <form id="contact-form" class="vintage-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correspondence Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Dispatch</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">L'Époque</div>
+            <p>&copy; 2026 Vintage Memories Archive. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Fb</a>
+                <a href="#">Ig</a>
+                <a href="#">Tw</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
